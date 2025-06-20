@@ -10,10 +10,10 @@ namespace ConsoleApp1.Models
     public class Department
     {
         public string Name { get; set; }
-        public uint DoctorCount { get; set; }
+        public int DoctorCount { get; set; }
         public List<Doctor> Doctors { get; set; }
         public Department() { }
-        public Department(string name, uint doctorCount, List<Doctor> doctors)
+        public Department(string name, int doctorCount, List<Doctor> doctors)
         {
             Name = name;
             DoctorCount = doctorCount;

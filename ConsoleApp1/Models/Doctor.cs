@@ -29,6 +29,7 @@ namespace ConsoleApp1.Models
                 }
             }
         }
+        public List<string> ReservedTimes { get; set; } = new List<string>();
         public Doctor() { }
         public Doctor(string name, string surname, DateTime workExperience, string timeRange)
         {
@@ -39,7 +40,7 @@ namespace ConsoleApp1.Models
         }
         public override string ToString() 
         {
-            return $"Name: {Name}\nSurname: {Surname}\nWork experience: {WorkExperience}\nTimeRange: {TimeRange}";
+            return $"Name: {Name}\nSurname: {Surname}\nWork experience: {WorkExperience}";
         }
     }
 }
